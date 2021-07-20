@@ -46,13 +46,19 @@
 // const message2 = `私の名前は${name}です。年齢は${
 //   age}です。`;
 
-const myProfile = ["Toru", 42];
+// const myProfile = ["Toru", 42];
 
-const message3 = `My name is ${myProfile[0]}. ${myProfile[1]}`;
+// const message3 = `My name is ${myProfile[0]}. ${myProfile[1]}`;
 
-console.log(message3);
+// console.log(message3);
 
-const [name, age] = myProfile;
+// const [name, age] = myProfile;
 
-const message4 = `My name is ${name}. ${age}`;
-console.log(message4);
+// const message4 = `My name is ${name}. ${age}`;
+// console.log(message4);
+
+/**
+ * デフォルト値、引き数
+ */
+const sayHello = (name = "guest") => console.log(`Hello, ${name}.`);
+sayHello();
